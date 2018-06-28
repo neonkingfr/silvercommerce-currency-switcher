@@ -1,0 +1,45 @@
+{
+    "name": "silvercommerce/currency-switcher",
+    "description": "Add functionality to enable user to change the site currency",
+      "type": "silverstripe-vendormodule",
+      "homepage": "https://github.com/silvercommerce/postage",
+      "keywords": [
+          "silverstripe",
+          "postage",
+          "shipping"
+      ],
+      "license": "BSD-3-Clause",
+      "authors": [
+          {
+              "name": "Morven Lewis-Everley",
+              "email": "morven@ilateral.co.uk"
+          }
+      ],
+      "support": {
+          "issues": "https://github.com/silvercommerce/postage/issues"
+      },
+      "require": {
+        "silverstripe/framework": "~4.0",
+        "silverstripe/cms": "~4.0",
+        "silverstripe/assets": "~1.0",
+        "silvercommerce/catalogue-admin": "1.*@dev",
+        "silvercommerce/settings": "~1.0"
+      },
+      "require-dev": {
+          "phpunit/phpunit": "^5.7"
+      },
+      "autoload": {
+          "psr-4": {
+              "SilverCommerce\\CurrencySwitcher\\": "src/",
+              "SilverCommerce\\CurrencySwitcher\\Tests\\": "tests/"
+          }
+      },
+      "scripts": {
+          "lint": "phpcs -s src/ tests/",
+          "lint-clean": "phpcbf src/ tests/"
+      },
+      "suggest": {
+          "silverstripe/cms": "Add full content management support to your site"
+      }
+  }
+  
