@@ -1,5 +1,5 @@
 ---
-Name: silvercommercesettingsconfig
+Name: silvercommercecurrencyswitcherconfig
 ---
 ## Extensions
 SilverStripe\Security\Member:
@@ -7,7 +7,7 @@ SilverStripe\Security\Member:
     - SilverCommerce\CurrencySwitcher\Extensions\MemberExtension
 ---
 Before: 
-  - '#silvercommercecurrencyswitcherconfig'
+  - '#silvercommercesettingsconfig'
 ---
 SilverStripe\Control\Controller:
   extensions:
